@@ -12,3 +12,7 @@ shopt -s checkwinsize
 
 # Darling: For colored ls output
 export CLICOLOR=1
+
+if [ -z "$PERL5LIB" ]; then
+	export PERL5LIB="/System/Library/Perl/5.28:/System/Library/Perl/5.28/darwin-thread-multi-2level:/Library/Perl/5.28:/System/Library/Perl/5.18:/System/Library/Perl/5.18/darwin-thread-multi-2level:/Library/Perl/5.18"
+fi
